@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="4.0" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+  <edmx:Reference Uri="https://sap.github.io/odata-vocabularies/vocabularies/Common.xml">
+    <edmx:Include Alias="Common" Namespace="com.sap.vocabularies.Common.v1"/>
+  </edmx:Reference>
+  <edmx:Reference Uri="https://oasis-tcs.github.io/odata-vocabularies/vocabularies/Org.OData.Core.V1.xml">
+    <edmx:Include Alias="Core" Namespace="Org.OData.Core.V1"/>
+  </edmx:Reference>
+  <edmx:DataServices>
+    <Schema Namespace="EventService" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+      <Annotation Term="Core.Links">
+        <Collection>
+          <Record>
+            <PropertyValue Property="rel" String="author"/>
+            <PropertyValue Property="href" String="https://cap.cloud.sap"/>
+          </Record>
+        </Collection>
+      </Annotation>
+      <EntityContainer Name="EntityContainer">
+        <EntitySet Name="Artists" EntityType="EventService.Artists">
+          <NavigationPropertyBinding Path="performances" Target="Performances"/>
+        </EntitySet>
+        <EntitySet Name="Events" EntityType="EventService.Events">
+          <NavigationPropertyBinding Path="stages" Target="Stages"/>
+          <NavigationPropertyBinding Path="performances" Target="Performances"/>
+        </EntitySet>
+        <EntitySet Name="Stages" EntityType="EventService.Stages">
+          <NavigationPropertyBinding Path="event" Target="Events"/>
+          <NavigationPropertyBinding Path="performances" Target="Performances"/>
+        </EntitySet>
+        <EntitySet Name="Performances" EntityType="EventService.Performances">
+          <NavigationPropertyBinding Path="artist" Target="Artists"/>
+          <NavigationPropertyBinding Path="event" Target="Events"/>
+          <NavigationPropertyBinding Path="stage" Target="Stages"/>
+        </EntitySet>
+        <ActionImport Name="reschedulePerformance" Action="EventService.reschedulePerformance" EntitySet="Performances"/>
+      </EntityContainer>
+      <EntityType Name="Artists">
+        <Key>
+          <PropertyRef Name="ID"/>
+        </Key>
+        <Property Name="ID" Type="Edm.Guid" Nullable="false"/>
+        <Property Name="name" Type="Edm.String" MaxLength="100"/>
+        <NavigationProperty Name="performances" Type="Collection(EventService.Performances)" Partner="artist"/>
+      </EntityType>
+      <EntityType Name="Events">
+        <Key>
+          <PropertyRef Name="ID"/>
+        </Key>
+        <Property Name="ID" Type="Edm.Guid" Nullable="false"/>
+        <Property Name="name" Type="Edm.String" MaxLength="100"/>
+        <Property Name="startDate" Type="Edm.Date"/>
+        <Property Name="endDate" Type="Edm.Date"/>
+        <Property Name="location" Type="Edm.String" MaxLength="200"/>
+        <NavigationProperty Name="stages" Type="Collection(EventService.Stages)" Partner="event"/>
+        <NavigationProperty Name="performances" Type="Collection(EventService.Performances)" Partner="event"/>
+      </EntityType>
+      <EntityType Name="Stages">
+        <Key>
+          <PropertyRef Name="ID"/>
+        </Key>
+        <Property Name="ID" Type="Edm.Guid" Nullable="false"/>
+        <Property Name="name" Type="Edm.String" MaxLength="50"/>
+        <NavigationProperty Name="event" Type="EventService.Events" Partner="stages">
+          <ReferentialConstraint Property="event_ID" ReferencedProperty="ID"/>
+        </NavigationProperty>
+        <Property Name="event_ID" Type="Edm.Guid"/>
+        <NavigationProperty Name="performances" Type="Collection(EventService.Performances)" Partner="stage"/>
+      </EntityType>
+      <EntityType Name="Performances">
+        <Key>
+          <PropertyRef Name="ID"/>
+        </Key>
+        <Property Name="ID" Type="Edm.Guid" Nullable="false"/>
+        <Property Name="startTime" Type="Edm.DateTimeOffset" Precision="7"/>
+        <Property Name="endTime" Type="Edm.DateTimeOffset" Precision="7"/>
+        <NavigationProperty Name="artist" Type="EventService.Artists" Partner="performances">
+          <ReferentialConstraint Property="artist_ID" ReferencedProperty="ID"/>
+        </NavigationProperty>
+        <Property Name="artist_ID" Type="Edm.Guid"/>
+        <NavigationProperty Name="event" Type="EventService.Events" Partner="performances">
+          <ReferentialConstraint Property="event_ID" ReferencedProperty="ID"/>
+        </NavigationProperty>
+        <Property Name="event_ID" Type="Edm.Guid"/>
+        <NavigationProperty Name="stage" Type="EventService.Stages" Partner="performances">
+          <ReferentialConstraint Property="stage_ID" ReferencedProperty="ID"/>
+        </NavigationProperty>
+        <Property Name="stage_ID" Type="Edm.Guid"/>
+      </EntityType>
+      <Action Name="reschedulePerformance" IsBound="false">
+        <Parameter Name="performanceID" Type="Edm.Guid"/>
+        <Parameter Name="newStartTime" Type="Edm.DateTimeOffset" Precision="7"/>
+        <Parameter Name="newEndTime" Type="Edm.DateTimeOffset" Precision="7"/>
+        <ReturnType Type="EventService.Performances"/>
+      </Action>
+      <Annotations Target="EventService.Artists/ID">
+        <Annotation Term="Core.ComputedDefaultValue" Bool="true"/>
+      </Annotations>
+      <Annotations Target="EventService.Events/ID">
+        <Annotation Term="Core.ComputedDefaultValue" Bool="true"/>
+      </Annotations>
+      <Annotations Target="EventService.Stages/ID">
+        <Annotation Term="Core.ComputedDefaultValue" Bool="true"/>
+      </Annotations>
+      <Annotations Target="EventService.Performances/ID">
+        <Annotation Term="Core.ComputedDefaultValue" Bool="true"/>
+      </Annotations>
+    </Schema>
+  </edmx:DataServices>
+</edmx:Edmx>

@@ -1,0 +1,443 @@
+{
+  "namespace": "flexso.events",
+  "definitions": {
+    "flexso.events.Artists": {
+      "kind": "entity",
+      "elements": {
+        "ID": {
+          "key": true,
+          "type": "cds.UUID"
+        },
+        "name": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "performances": {
+          "type": "cds.Association",
+          "cardinality": {
+            "max": "*"
+          },
+          "target": "flexso.events.Performances",
+          "on": [
+            {
+              "ref": [
+                "performances",
+                "artist"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "$self"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "flexso.events.Events": {
+      "kind": "entity",
+      "elements": {
+        "ID": {
+          "key": true,
+          "type": "cds.UUID"
+        },
+        "name": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "startDate": {
+          "type": "cds.Date"
+        },
+        "endDate": {
+          "type": "cds.Date"
+        },
+        "location": {
+          "type": "cds.String",
+          "length": 200
+        },
+        "stages": {
+          "type": "cds.Association",
+          "cardinality": {
+            "max": "*"
+          },
+          "target": "flexso.events.Stages",
+          "on": [
+            {
+              "ref": [
+                "stages",
+                "event"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "$self"
+              ]
+            }
+          ]
+        },
+        "performances": {
+          "type": "cds.Association",
+          "cardinality": {
+            "max": "*"
+          },
+          "target": "flexso.events.Performances",
+          "on": [
+            {
+              "ref": [
+                "performances",
+                "event"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "$self"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "flexso.events.Stages": {
+      "kind": "entity",
+      "elements": {
+        "ID": {
+          "key": true,
+          "type": "cds.UUID"
+        },
+        "name": {
+          "type": "cds.String",
+          "length": 50
+        },
+        "event": {
+          "type": "cds.Association",
+          "target": "flexso.events.Events",
+          "keys": [
+            {
+              "ref": [
+                "ID"
+              ]
+            }
+          ]
+        },
+        "performances": {
+          "type": "cds.Association",
+          "cardinality": {
+            "max": "*"
+          },
+          "target": "flexso.events.Performances",
+          "on": [
+            {
+              "ref": [
+                "performances",
+                "stage"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "$self"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "flexso.events.Performances": {
+      "kind": "entity",
+      "elements": {
+        "ID": {
+          "key": true,
+          "type": "cds.UUID"
+        },
+        "startTime": {
+          "type": "cds.Timestamp"
+        },
+        "endTime": {
+          "type": "cds.Timestamp"
+        },
+        "artist": {
+          "type": "cds.Association",
+          "target": "flexso.events.Artists",
+          "keys": [
+            {
+              "ref": [
+                "ID"
+              ]
+            }
+          ]
+        },
+        "event": {
+          "type": "cds.Association",
+          "target": "flexso.events.Events",
+          "keys": [
+            {
+              "ref": [
+                "ID"
+              ]
+            }
+          ]
+        },
+        "stage": {
+          "type": "cds.Association",
+          "target": "flexso.events.Stages",
+          "keys": [
+            {
+              "ref": [
+                "ID"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "EventService": {
+      "@source": "srv/event-service.cds",
+      "kind": "service"
+    },
+    "EventService.Artists": {
+      "kind": "entity",
+      "projection": {
+        "from": {
+          "ref": [
+            "flexso.events.Artists"
+          ]
+        }
+      },
+      "elements": {
+        "ID": {
+          "key": true,
+          "type": "cds.UUID"
+        },
+        "name": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "performances": {
+          "type": "cds.Association",
+          "cardinality": {
+            "max": "*"
+          },
+          "target": "EventService.Performances",
+          "on": [
+            {
+              "ref": [
+                "performances",
+                "artist"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "$self"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "EventService.Events": {
+      "kind": "entity",
+      "projection": {
+        "from": {
+          "ref": [
+            "flexso.events.Events"
+          ]
+        }
+      },
+      "elements": {
+        "ID": {
+          "key": true,
+          "type": "cds.UUID"
+        },
+        "name": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "startDate": {
+          "type": "cds.Date"
+        },
+        "endDate": {
+          "type": "cds.Date"
+        },
+        "location": {
+          "type": "cds.String",
+          "length": 200
+        },
+        "stages": {
+          "type": "cds.Association",
+          "cardinality": {
+            "max": "*"
+          },
+          "target": "EventService.Stages",
+          "on": [
+            {
+              "ref": [
+                "stages",
+                "event"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "$self"
+              ]
+            }
+          ]
+        },
+        "performances": {
+          "type": "cds.Association",
+          "cardinality": {
+            "max": "*"
+          },
+          "target": "EventService.Performances",
+          "on": [
+            {
+              "ref": [
+                "performances",
+                "event"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "$self"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "EventService.Stages": {
+      "kind": "entity",
+      "projection": {
+        "from": {
+          "ref": [
+            "flexso.events.Stages"
+          ]
+        }
+      },
+      "elements": {
+        "ID": {
+          "key": true,
+          "type": "cds.UUID"
+        },
+        "name": {
+          "type": "cds.String",
+          "length": 50
+        },
+        "event": {
+          "type": "cds.Association",
+          "target": "EventService.Events",
+          "keys": [
+            {
+              "ref": [
+                "ID"
+              ]
+            }
+          ]
+        },
+        "performances": {
+          "type": "cds.Association",
+          "cardinality": {
+            "max": "*"
+          },
+          "target": "EventService.Performances",
+          "on": [
+            {
+              "ref": [
+                "performances",
+                "stage"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "$self"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "EventService.Performances": {
+      "kind": "entity",
+      "projection": {
+        "from": {
+          "ref": [
+            "flexso.events.Performances"
+          ]
+        }
+      },
+      "elements": {
+        "ID": {
+          "key": true,
+          "type": "cds.UUID"
+        },
+        "startTime": {
+          "type": "cds.Timestamp"
+        },
+        "endTime": {
+          "type": "cds.Timestamp"
+        },
+        "artist": {
+          "type": "cds.Association",
+          "target": "EventService.Artists",
+          "keys": [
+            {
+              "ref": [
+                "ID"
+              ]
+            }
+          ]
+        },
+        "event": {
+          "type": "cds.Association",
+          "target": "EventService.Events",
+          "keys": [
+            {
+              "ref": [
+                "ID"
+              ]
+            }
+          ]
+        },
+        "stage": {
+          "type": "cds.Association",
+          "target": "EventService.Stages",
+          "keys": [
+            {
+              "ref": [
+                "ID"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "EventService.reschedulePerformance": {
+      "kind": "action",
+      "params": {
+        "performanceID": {
+          "type": "cds.UUID"
+        },
+        "newStartTime": {
+          "type": "cds.Timestamp"
+        },
+        "newEndTime": {
+          "type": "cds.Timestamp"
+        }
+      },
+      "returns": {
+        "type": "EventService.Performances"
+      }
+    }
+  },
+  "meta": {
+    "creator": "CDS Compiler v5.2.0",
+    "flavor": "inferred"
+  },
+  "$version": "2.0"
+}
