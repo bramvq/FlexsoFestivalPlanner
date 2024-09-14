@@ -47,10 +47,10 @@
           "length": 100
         },
         "startDate": {
-          "type": "cds.Date"
+          "type": "cds.Timestamp"
         },
         "endDate": {
-          "type": "cds.Date"
+          "type": "cds.Timestamp"
         },
         "location": {
           "type": "cds.String",
@@ -257,10 +257,10 @@
           "length": 100
         },
         "startDate": {
-          "type": "cds.Date"
+          "type": "cds.Timestamp"
         },
         "endDate": {
-          "type": "cds.Date"
+          "type": "cds.Timestamp"
         },
         "location": {
           "type": "cds.String",

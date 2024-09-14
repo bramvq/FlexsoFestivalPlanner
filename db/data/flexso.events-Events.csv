@@ -1,4 +1,2 @@
 ID,name,startDate,endDate,location
-101, Rock Werchter, 2024-06-30, 2024-07-05, Werchter
-102, Pukkelpop, 2024-08-18, 2024-08-21, Kiewit
-103, Graspop, 2024-06-16, 2024-06-19, Dessel
+101,Test Event,2024-09-20T18:00:00Z,2024-09-21T18:00:00Z,Gent

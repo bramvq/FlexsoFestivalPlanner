@@ -7,11 +7,11 @@ entity Artists {
                            on performances.artist = $self;
 }
 
-entity Events { //Voor het beheren van evenementen.
+entity Events {
     key ID           : UUID;
         name         : String(100);
-        startDate    : Date;
-        endDate      : Date;
+        startDate    : Timestamp;
+        endDate      : Timestamp;
         location     : String(200);
         stages       : Association to many Stages
                            on stages.event = $self;

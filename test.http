@@ -47,7 +47,7 @@ POST {{host}}/Events
 Content-Type: {{contentType}}
 
 {
-  "ID": "104",
+  "ID": "102",
   "name": "Woodstock 2024",
   "startDate": "2024-01-01",
   "endDate": "2024-01-03",
@@ -102,12 +102,12 @@ Content-Type: {{contentType}}
   "endTime": "2024-09-20T19:30:00Z",
   "artist_ID": "104",
   "event_ID": "101",
-  "stage_ID": "102"  # Zelfde stage en tijd als bestaande performance
+  "stage_ID": "102" 
 }
 
 
 ### Haal event op met berekende duur
-GET {{host}}/Events(ID='104')
+GET {{host}}/Events(ID='101')
 Accept: {{contentType}}
 
 
@@ -116,12 +116,71 @@ POST {{host}}/Performances
 Content-Type: {{contentType}}
 
 {
-  "ID": "106",
+  "ID": "107",
   "startTime": "2024-09-20T20:00:00Z",
-  "artist_ID": "108",
+  "artist_ID": "102",
   "event_ID": "101",
-  "stage_ID": "102"
+  "stage_ID": "101"
 }
+### Verwijder performance 106
+DELETE {{host}}/Performances(ID='106')
+
 
 ### Probeer event te verwijderen met gekoppelde performances
 DELETE {{host}}/Events(ID='101')
+
+
+### Maak nieuw podium
+POST {{host}}/Stages
+Content-Type: {{contentType}}
+
+{
+    "ID": "107",
+    "name": "Alternative Stage",
+    "event_ID": "103"
+}
+
+### Maak nieuwe performance
+POST {{host}}/Performances
+Content-Type: {{contentType}}
+
+{
+    "ID": "104",
+    "startTime": "2024-09-20T18:00:00Z",
+    "endTime": "2024-09-20T19:30:00Z",
+    "artist_ID": "101",
+    "event_ID": "101",
+    "stage_ID": "101"
+}
+
+### Maak nieuwe performance met overlap tijdsslot
+POST {{host}}/Performances
+Content-Type: {{contentType}}
+
+{
+    "ID": "106",
+    "startTime": "2024-09-20T18:30:00Z",
+    "endTime": "2024-09-20T19:40:00Z",
+    "artist_ID": "102",
+    "event_ID": "101",
+    "stage_ID": "101"
+}
+
+
+### Toon alle performances van een event
+GET {{host}}/Events(ID='101')?$expand=performances
+Accept: application/json
+
+
+### Voeg performance toe buiten de eventdatums
+POST {{host}}/Performances
+Content-Type: application/json
+
+{
+  "ID": "107",
+  "startTime": "2024-10-01T12:00:00Z",
+  "endTime": "2024-10-01T14:00:00Z",
+  "artist_ID": "103",
+  "event_ID": "101",  
+  "stage_ID": "102"
+}

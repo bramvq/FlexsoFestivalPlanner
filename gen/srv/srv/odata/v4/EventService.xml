@@ -49,8 +49,8 @@
         </Key>
         <Property Name="ID" Type="Edm.Guid" Nullable="false"/>
         <Property Name="name" Type="Edm.String" MaxLength="100"/>
-        <Property Name="startDate" Type="Edm.Date"/>
-        <Property Name="endDate" Type="Edm.Date"/>
+        <Property Name="startDate" Type="Edm.DateTimeOffset" Precision="7"/>
+        <Property Name="endDate" Type="Edm.DateTimeOffset" Precision="7"/>
         <Property Name="location" Type="Edm.String" MaxLength="200"/>
         <NavigationProperty Name="stages" Type="Collection(EventService.Stages)" Partner="event"/>
         <NavigationProperty Name="performances" Type="Collection(EventService.Performances)" Partner="event"/>
