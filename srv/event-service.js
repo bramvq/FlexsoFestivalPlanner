@@ -2,12 +2,12 @@ const cds = require("@sap/cds"); // Importeer cds module voor database operaties
 
 module.exports = async (srv) => {
   // 1. Valideer start- en einddatum
-  // srv.before("CREATE", "Events", (req) => {
-  //   const { startDate, endDate } = req.data;
-  //   if (new Date(startDate) > new Date(endDate)) {
-  //     req.error(400, "Start datum moet voor eind datum liggen");
-  //   }
-  // });
+  srv.before("CREATE", "Events", (req) => {
+    const { startDate, endDate } = req.data;
+    if (new Date(startDate) > new Date(endDate)) {
+      req.error(400, "Start datum moet voor eind datum liggen");
+    }
+  });
 
   //TODO: errors.
   // // 2. Voorkom overlapping van performances op hetzelfde podium
