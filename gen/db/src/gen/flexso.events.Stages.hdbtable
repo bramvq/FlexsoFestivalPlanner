@@ -1,0 +1,6 @@
+COLUMN TABLE flexso_events_Stages (
+  ID NVARCHAR(36) NOT NULL,
+  name NVARCHAR(50),
+  event_ID NVARCHAR(36),
+  PRIMARY KEY(ID)
+)

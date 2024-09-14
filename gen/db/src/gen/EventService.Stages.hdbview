@@ -1,0 +1,5 @@
+VIEW EventService_Stages AS SELECT
+  Stages_0.ID,
+  Stages_0.name,
+  Stages_0.event_ID
+FROM flexso_events_Stages AS Stages_0

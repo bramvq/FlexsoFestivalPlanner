@@ -1,0 +1,328 @@
+#2.0#2024 09 14 12:09:27.983#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-9993###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:10.131204] Uploading app package for app with guid de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 (STDOUT, API)#
+
+#2.0#2024 09 14 12:09:27.983#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-9993###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:10.467097] Updated app with guid de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 ({"environment_variables"=>"[PRIVATE DATA HIDDEN]"}) (STDOUT, API)#
+
+#2.0#2024 09 14 12:09:27.983#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-9993###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:18.119282] Scaling process: "web" (STDOUT, API)#
+
+#2.0#2024 09 14 12:09:27.983#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-9993###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:18.903046] Creating build for app with guid de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 (STDOUT, API)#
+
+#2.0#2024 09 14 12:09:27.983#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-9993###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:19.320884] Downloading nodejs_buildpack... (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:27.983#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-9993###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:19.352188] Downloaded nodejs_buildpack (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:27.983#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-9993###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:19.352242] Cell 77283d80-dfa7-40ba-ba4e-265aef112085 creating container for instance f5164a79-31b6-42b8-89f9-4d31cf541541 (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:27.983#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-9993###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:19.642167] Security group rules were updated (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:27.983#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-9993###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:19.698861] Cell 77283d80-dfa7-40ba-ba4e-265aef112085 successfully created container for instance f5164a79-31b6-42b8-89f9-4d31cf541541 (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:27.983#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-9993###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:19.907041] Downloading app package... (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:27.983#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-9993###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:19.907061] Downloading build artifacts cache... (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:27.983#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-9993###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:19.976571] Downloaded build artifacts cache (220B) (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:27.983#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-9993###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:20.260311] Downloaded app package (4.2M) (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:27.983#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-9993###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:20.312562] -----> Nodejs Buildpack version 1.8.27 (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:27.984#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-9993###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:20.436800] -----> Bootstrapping python (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:27.984#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-9993###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:20.436818] -----> Installing python 3.11.9 (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:27.984#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-9993###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:20.436882] Copy [/tmp/buildpacks/2a30e1b8700f34f7/dependencies/21946bb90387e2dbfa40b0d6ca474060/python_3.11.9_linux_x64_cflinuxfs4_dea1f79d.tgz] (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:27.984#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-9993###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:23.851703] -----> Installing binaries (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:27.984#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-9993###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:23.851832] engines.node (package.json): unspecified (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:27.984#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-9993###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:23.851843] engines.npm (package.json): unspecified (use default) (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:27.984#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-9993###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:23.851850] [31;1m**WARNING**[0m Node version not specified in package.json or .nvmrc. See: http://docs.cloudfoundry.org/buildpacks/node/node-tips.html (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:27.984#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-9993###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:23.851853] -----> Installing node 18.20.4 (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:27.984#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-9993###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:23.851906] Copy [/tmp/buildpacks/2a30e1b8700f34f7/dependencies/25d795674ce9a8efb0e8f010cd0968a2/node_18.20.4_linux_x64_cflinuxfs4_0d65a7d1.tgz] (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:27.984#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-9993###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:25.580318] Using default npm version: 10.7.0 (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:27.984#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-9993###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:25.580337] -----> Installing yarn 1.22.19 (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:27.984#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-9993###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:25.580429] Copy [/tmp/buildpacks/2a30e1b8700f34f7/dependencies/0f06052381cbcef1593bd279ca3d9458/yarn_1.22.19_linux_noarch_any-stack_32d0e82e.tgz] (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:27.984#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-9993###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:25.899146] Installed yarn 1.22.19 (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:27.984#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-9993###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:25.899168] -----> Creating runtime environment (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:27.984#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-9993###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:25.900206] NODE_ENV=production (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:27.984#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-9993###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:25.900217] NODE_HOME=/tmp/contents3179568983/deps/0/node (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:27.984#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-9993###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:25.900220] NODE_MODULES_CACHE=true (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:27.984#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-9993###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:25.900223] NODE_VERBOSE=false (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:27.984#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-9993###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:25.900226] NPM_CONFIG_LOGLEVEL=error (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:27.984#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-9993###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:25.900231] NPM_CONFIG_PRODUCTION=true (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:27.984#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-9993###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:25.900234] -----> Building dependencies (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:27.984#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-9993###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:25.900236] Prebuild detected (node_modules already exists) (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:27.984#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-9993###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:25.900243] Rebuilding any native modules (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:27.984#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-9993###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:26.483539] rebuilt dependencies successfully (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:27.984#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-9993###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:26.485344] npm notice (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:27.984#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-9993###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:26.485355] npm notice New minor version of npm available! 10.7.0 -> 10.8.3 (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:27.984#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-9993###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:26.485360] npm notice Changelog: https://github.com/npm/cli/releases/tag/v10.8.3 (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:27.984#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-9993###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:26.485363] npm notice To update run: npm install -g npm@10.8.3 (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:27.984#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-9993###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:26.485366] npm notice (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:27.984#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-9993###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:26.493754] Installing any new modules (package.json + package-lock.json) (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:27.984#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-9993###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:27.284900] up to date in 709ms (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:27.984#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-9993###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:27.285001] 14 packages are looking for funding (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:27.984#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-9993###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:27.285016] run `npm fund` for details (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:37.994#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-10001###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:27.986133] Contrast Security no credentials found. Will not write environment files. (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:37.994#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-10001###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:36.021871] Exit status 0 (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:37.994#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-10001###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:36.021917] Uploading droplet, build artifacts cache... (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:37.994#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-10001###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:36.021953] Uploading build artifacts cache... (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:37.994#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-10001###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:36.021967] Uploading droplet... (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:37.994#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-10001###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:36.052918] Uploaded build artifacts cache (225B) (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:37.994#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-10001###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:36.919444] Creating droplet for app with guid de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 (STDOUT, API)#
+
+#2.0#2024 09 14 12:09:47.759#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-20504###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:40.104761] Uploaded droplet (47.9M) (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:47.759#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-20504###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:40.115103] Uploading complete (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:47.759#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-20504###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:40.427962] Cell 77283d80-dfa7-40ba-ba4e-265aef112085 stopping instance f5164a79-31b6-42b8-89f9-4d31cf541541 (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:47.759#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-20504###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:40.427994] Cell 77283d80-dfa7-40ba-ba4e-265aef112085 destroying container for instance f5164a79-31b6-42b8-89f9-4d31cf541541 (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:47.759#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.stageAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-20504###
+[PollStageAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:41.914784] Cell 77283d80-dfa7-40ba-ba4e-265aef112085 successfully destroyed container for instance f5164a79-31b6-42b8-89f9-4d31cf541541 (STDOUT, STG)#
+
+#2.0#2024 09 14 12:09:57.825#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.startAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-20512###
+[PollStartAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:47.850205] Updated app with guid de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 ({:droplet_guid=>"35f4b843-9fe0-4ce0-a1f8-baa9dc25da67"}) (STDOUT, API)#
+
+#2.0#2024 09 14 12:09:57.825#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.startAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-20512###
+[PollStartAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:48.110324] Creating revision for app with guid de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 (STDOUT, API)#
+
+#2.0#2024 09 14 12:09:57.825#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.startAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-20512###
+[PollStartAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:48.143788] Starting app with guid de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 (STDOUT, API)#
+
+#2.0#2024 09 14 12:09:57.825#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.startAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-20512###
+[PollStartAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:48.293794] Cell 0e9d359d-cbb1-42e2-ae1d-5cfbdc4910b6 creating container for instance 2b711baa-e036-462c-73e0-2899 (STDOUT, CELL)#
+
+#2.0#2024 09 14 12:09:57.825#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.startAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-20512###
+[PollStartAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:48.576303] Security group rules were updated (STDOUT, CELL)#
+
+#2.0#2024 09 14 12:09:57.825#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.startAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-20512###
+[PollStartAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:48.638386] Cell 0e9d359d-cbb1-42e2-ae1d-5cfbdc4910b6 successfully created container for instance 2b711baa-e036-462c-73e0-2899 (STDOUT, CELL)#
+
+#2.0#2024 09 14 12:09:57.825#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.startAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-20512###
+[PollStartAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:49.130760] Downloading droplet... (STDOUT, CELL)#
+
+#2.0#2024 09 14 12:09:57.825#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.startAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-20512###
+[PollStartAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:51.524459] Downloaded droplet (47.9M) (STDOUT, CELL)#
+
+#2.0#2024 09 14 12:09:57.825#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.startAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-20512###
+[PollStartAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:51.524578] Starting health monitoring of container (STDOUT, CELL)#
+
+#2.0#2024 09 14 12:09:57.825#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.startAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-20512###
+[PollStartAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:51.581527] Invoking pre-start scripts. (STDOUT, APP/PROC/WEB)#
+
+#2.0#2024 09 14 12:09:57.825#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.startAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-20512###
+[PollStartAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:51.769793] Invoking start command. (STDOUT, APP/PROC/WEB)#
+
+#2.0#2024 09 14 12:09:57.825#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.startAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-20512###
+[PollStartAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:52.118344] > flexso-festival-planner@1.0.0 start (STDOUT, APP/PROC/WEB)#
+
+#2.0#2024 09 14 12:09:57.825#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.startAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-20512###
+[PollStartAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:52.118360] > cds-serve (STDOUT, APP/PROC/WEB)#
+
+#2.0#2024 09 14 12:09:57.825#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.startAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-20512###
+[PollStartAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:52.464521] {"level":"info","logger":"cds","timestamp":"2024-09-14T12:09:52.463Z","layer":"cds","component_type":"application","container_id":"10.32.1.6","component_id":"de3c6a79-539c-4da7-9e5a-e9ce52a55ad0","component_name":"flexso-festival-planner-srv","component_instance":0,"source_instance":0,"organization_name":"fb50d9cbtrial","organization_id":"b7352fe5-04a4-4631-8e43-bd692b446568","space_name":"dev","space_id":"eb0dfdff-8bd1-40b9-b7e7-48d37c55a1a9","msg":"loaded model from 1 file(s):\n","type":"log"} (STDOUT, APP/PROC/WEB)#
+
+#2.0#2024 09 14 12:09:57.825#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.startAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-20512###
+[PollStartAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:52.465012] srv/csn.json (STDOUT, APP/PROC/WEB)#
+
+#2.0#2024 09 14 12:09:57.825#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.startAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-20512###
+[PollStartAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:52.662046] {"level":"info","logger":"cds","timestamp":"2024-09-14T12:09:52.660Z","layer":"cds","component_type":"application","container_id":"10.32.1.6","component_id":"de3c6a79-539c-4da7-9e5a-e9ce52a55ad0","component_name":"flexso-festival-planner-srv","component_instance":0,"source_instance":0,"organization_name":"fb50d9cbtrial","organization_id":"b7352fe5-04a4-4631-8e43-bd692b446568","space_name":"dev","space_id":"eb0dfdff-8bd1-40b9-b7e7-48d37c55a1a9","msg":"connect to db > hana {\n  database_id: 'b70ffb12-ca4d-4ce3-b1a2-45368d1a59a1',\n  host: 'b70ffb12-ca4d-4ce3-b1a2-45368d1a59a1.hana.trial-us10.hanacloud.ondemand.com',\n  port: '443',\n  driver: 'com.sap.db.jdbc.Driver',\n  url: 'jdbc:sap://b70ffb12-ca4d-4ce3-b1a2-45368d1a59a1.hana.trial-us10.hanacloud.ondemand.com:443?encrypt=true&validateCertificate=true&currentschema=1AA7C8A991524D21A281373EBD98AAE0',\n  schema: '1AA7C8A991524D21A281373EBD98AAE0',\n  certificate: '...',\n  hdi_user: '1AA7C8A991524D21A281373EBD98AAE0_3DHK8U3ZLHIQPCCOP65HWYOLM_DT',\n  hdi_password: '...',\n  user: '1AA7C8A991524D21A281373EBD98AAE0_3DHK8U3ZLHIQPCCOP65HWYOLM_RT',\n  password: '...'\n}","type":"log"} (STDOUT, APP/PROC/WEB)#
+
+#2.0#2024 09 14 12:09:57.825#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.startAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-20512###
+[PollStartAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:52.694471] {"level":"info","logger":"cds","timestamp":"2024-09-14T12:09:52.694Z","layer":"cds","component_type":"application","container_id":"10.32.1.6","component_id":"de3c6a79-539c-4da7-9e5a-e9ce52a55ad0","component_name":"flexso-festival-planner-srv","component_instance":0,"source_instance":0,"organization_name":"fb50d9cbtrial","organization_id":"b7352fe5-04a4-4631-8e43-bd692b446568","space_name":"dev","space_id":"eb0dfdff-8bd1-40b9-b7e7-48d37c55a1a9","msg":"using auth strategy { kind: 'xsuaa', impl: 'node_modules/@sap/cds/lib/auth/jwt-auth' } \n","type":"log"} (STDOUT, APP/PROC/WEB)#
+
+#2.0#2024 09 14 12:09:57.825#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.startAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-20512###
+[PollStartAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:52.716832] {"level":"info","logger":"cds","timestamp":"2024-09-14T12:09:52.716Z","layer":"cds","component_type":"application","container_id":"10.32.1.6","component_id":"de3c6a79-539c-4da7-9e5a-e9ce52a55ad0","component_name":"flexso-festival-planner-srv","component_instance":0,"source_instance":0,"organization_name":"fb50d9cbtrial","organization_id":"b7352fe5-04a4-4631-8e43-bd692b446568","space_name":"dev","space_id":"eb0dfdff-8bd1-40b9-b7e7-48d37c55a1a9","msg":"using new OData adapter","type":"log"} (STDOUT, APP/PROC/WEB)#
+
+#2.0#2024 09 14 12:09:57.825#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.startAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-20512###
+[PollStartAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:52.728509] {"level":"info","logger":"cds","timestamp":"2024-09-14T12:09:52.728Z","layer":"cds","component_type":"application","container_id":"10.32.1.6","component_id":"de3c6a79-539c-4da7-9e5a-e9ce52a55ad0","component_name":"flexso-festival-planner-srv","component_instance":0,"source_instance":0,"organization_name":"fb50d9cbtrial","organization_id":"b7352fe5-04a4-4631-8e43-bd692b446568","space_name":"dev","space_id":"eb0dfdff-8bd1-40b9-b7e7-48d37c55a1a9","msg":"serving EventService { impl: 'srv/event-service.js', path: '/odata/v4/event' }","type":"log"} (STDOUT, APP/PROC/WEB)#
+
+#2.0#2024 09 14 12:09:57.825#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.startAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-20512###
+[PollStartAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:52.734] {"level":"info","logger":"cds","timestamp":"2024-09-14T12:09:52.733Z","layer":"cds","component_type":"application","container_id":"10.32.1.6","component_id":"de3c6a79-539c-4da7-9e5a-e9ce52a55ad0","component_name":"flexso-festival-planner-srv","component_instance":0,"source_instance":0,"organization_name":"fb50d9cbtrial","organization_id":"b7352fe5-04a4-4631-8e43-bd692b446568","space_name":"dev","space_id":"eb0dfdff-8bd1-40b9-b7e7-48d37c55a1a9","msg":"server listening on { url: 'http://localhost:8080' }","type":"log"} (STDOUT, APP/PROC/WEB)#
+
+#2.0#2024 09 14 12:09:57.825#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.startAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-20512###
+[PollStartAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:52.734218] [cds] - launched at 9/14/2024, 12:09:52 PM, version: 8.2.2, in: 446.931ms (STDOUT, APP/PROC/WEB)#
+
+#2.0#2024 09 14 12:09:57.825#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.startAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-20512###
+[PollStartAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:53.997788] Container became healthy (STDOUT, CELL)#
+
+#2.0#2024 09 14 12:09:57.825#Z#DEBUG#com.sap.cloud.lm.sl.xs2.0e9a27aa-7292-11ef-9582-eeee0a84f705.flexso-festival-planner-srv.startAppTask#
+######org.cloudfoundry.multiapps.controller.persistence.services.ProcessLogger########flowable-async-job-executor-thread-20512###
+[PollStartAppStatusExecution] [flexso-festival-planner-srv] de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 [2024-09-14T12:09:54.015716] Process became ready with guid de3c6a79-539c-4da7-9e5a-e9ce52a55ad0 payload: {"instance"=>"2b711baa-e036-462c-73e0-2899", "index"=>0, "cell_id"=>"0e9d359d-cbb1-42e2-ae1d-5cfbdc4910b6", "ready"=>true, "version"=>"0e24449c-4093-4eac-9361-3968ed087ad1"} (STDOUT, API)#
+

@@ -67,7 +67,9 @@ module.exports = async (srv) => {
     if (startTime && event_ID) {
       console.log("Event ID:", event_ID);
       // Haal het event op waaraan de performance gekoppeld is
-      const event = await SELECT.one.from("Events").where({ ID: event_ID });
+      const event = await SELECT.one
+        .from("flexso.events.Events")
+        .where({ ID: event_ID });
 
       if (event) {
         const performanceDate = new Date(startTime);
@@ -87,14 +89,14 @@ module.exports = async (srv) => {
     }
   });
 
-  // // 4. Voorkom overlapping van performances op hetzelfde podium
-  // srv.before("CREATE", "Performances", async (req) => {
-  //   const { startTime, endTime, stage_ID } = req.data;
-  //   const overlapping = await SELECT.from("Performances")
-  //     .where({ stage_ID: stage_ID })
-  //     .and(`startTime < '${endTime}' and endTime > '${startTime}'`);
-  //   if (overlapping.length > 0) {
-  //     req.error(409, "Dit tijdslot is al bezet");
-  //   }
-  // });
+  // 4. Voorkom overlapping van performances op hetzelfde podium
+  srv.before("CREATE", "Performances", async (req) => {
+    const { startTime, endTime, stage_ID } = req.data;
+    const overlapping = await SELECT.from("flexso.events.Performances")
+      .where({ stage_ID: stage_ID })
+      .and(`startTime < '${endTime}' and endTime > '${startTime}'`);
+    if (overlapping.length > 0) {
+      req.error(409, "Dit tijdslot is al bezet");
+    }
+  });
 };

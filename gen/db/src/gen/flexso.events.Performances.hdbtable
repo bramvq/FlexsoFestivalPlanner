@@ -1,0 +1,9 @@
+COLUMN TABLE flexso_events_Performances (
+  ID NVARCHAR(36) NOT NULL,
+  startTime TIMESTAMP,
+  endTime TIMESTAMP,
+  artist_ID NVARCHAR(36),
+  event_ID NVARCHAR(36),
+  stage_ID NVARCHAR(36),
+  PRIMARY KEY(ID)
+)

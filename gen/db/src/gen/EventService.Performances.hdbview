@@ -1,0 +1,8 @@
+VIEW EventService_Performances AS SELECT
+  Performances_0.ID,
+  Performances_0.startTime,
+  Performances_0.endTime,
+  Performances_0.artist_ID,
+  Performances_0.event_ID,
+  Performances_0.stage_ID
+FROM flexso_events_Performances AS Performances_0

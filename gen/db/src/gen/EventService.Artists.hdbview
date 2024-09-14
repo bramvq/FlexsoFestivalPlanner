@@ -1,0 +1,4 @@
+VIEW EventService_Artists AS SELECT
+  Artists_0.ID,
+  Artists_0.name
+FROM flexso_events_Artists AS Artists_0
