@@ -1,0 +1,127 @@
+### Variabelen
+@host = http://localhost:4004/odata/v4/event
+@contentType = application/json
+
+### Artists
+# 
+# Alle Artists
+GET {{host}}/Artists
+Accept: {{contentType}}
+
+### Specifieke Artist
+GET {{host}}/Artists(ID='103')
+Accept: {{contentType}}
+
+### Maak nieuwe Artist
+POST {{host}}/Artists
+Content-Type: {{contentType}}
+
+{
+  "ID": "108",
+  "name": "New Radicals"
+}
+
+### Update een Artist
+PUT {{host}}/Artists(ID='108')
+Content-Type: {{contentType}}
+
+{
+  "name": "Old Radicals"
+}
+
+### Delete een Artist
+DELETE {{host}}/Artists(ID='108')
+
+### Events
+
+### Alle Events
+GET {{host}}/Events
+Accept: {{contentType}}
+
+### Specifieke Event
+GET {{host}}/Events(ID='102')
+Accept: {{contentType}}
+
+### Nieuw Event
+POST {{host}}/Events
+Content-Type: {{contentType}}
+
+{
+  "ID": "104",
+  "name": "Woodstock 2024",
+  "startDate": "2024-01-01",
+  "endDate": "2024-01-03",
+  "location": "Woodstock"
+}
+
+
+### Stages
+
+# Alle Stages
+GET {{host}}/Stages
+Accept: {{contentType}}
+
+### Specifieke Stage
+GET {{host}}/Stages(ID='103')
+Accept: {{contentType}}
+
+
+### Nieuwe performance
+POST {{host}}/Performances
+Content-Type: {{contentType}}
+
+{
+    "ID": "104",
+    "startTime": "2024-09-20T18:00:00Z",
+    "endTime": "2024-09-20T19:30:00Z",
+    "artist_ID": "550e8400-e29b-41d4-a716-446655440001",
+    "event_ID": "101",
+    "stage_ID": "102"
+}
+
+
+### Event met ongeldige datums (startDate > endDate)
+POST {{host}}/Events
+Content-Type: {{contentType}}
+
+{
+  "ID": "105",
+  "name": "Invalid Event",
+  "startDate": "2024-01-05",
+  "endDate": "2024-01-01",
+  "location": "Some Location"
+}
+
+### Voeg een performance toe op een bezet podium
+POST {{host}}/Performances
+Content-Type: {{contentType}}
+
+{
+  "ID": "105",
+  "startTime": "2024-09-20T18:00:00Z",
+  "endTime": "2024-09-20T19:30:00Z",
+  "artist_ID": "104",
+  "event_ID": "101",
+  "stage_ID": "102"  # Zelfde stage en tijd als bestaande performance
+}
+
+
+### Haal event op met berekende duur
+GET {{host}}/Events(ID='104')
+Accept: {{contentType}}
+
+
+### Voeg performance toe zonder eindtijd
+POST {{host}}/Performances
+Content-Type: {{contentType}}
+
+{
+  "ID": "106",
+  "startTime": "2024-09-20T20:00:00Z",
+  "artist_ID": "108",
+  "event_ID": "101",
+  "stage_ID": "102"
+}
+
+### Probeer event te verwijderen met gekoppelde performances
+DELETE {{host}}/Events(ID='101')
