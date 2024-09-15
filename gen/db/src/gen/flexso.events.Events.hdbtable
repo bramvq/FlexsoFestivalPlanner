@@ -1,8 +1,0 @@
-COLUMN TABLE flexso_events_Events (
-  ID NVARCHAR(36) NOT NULL,
-  name NVARCHAR(100),
-  startDate TIMESTAMP,
-  endDate TIMESTAMP,
-  location NVARCHAR(200),
-  PRIMARY KEY(ID)
-)

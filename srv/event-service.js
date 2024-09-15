@@ -51,16 +51,7 @@ module.exports = async (srv) => {
     }
   });
 
-  // 2. Custom actie om performance te verplaatsen
-  srv.on("reschedulePerformance", async (req) => {
-    const { performanceID, newStartTime, newEndTime } = req.data;
-    await UPDATE("Performances")
-      .set({ startTime: newStartTime, endTime: newEndTime })
-      .where({ ID: performanceID });
-    return SELECT.one.from("Performances").where({ ID: performanceID });
-  });
-
-  // 3. Check of start datum van performance binnen datums van event valt
+  // 2. Check of start datum van performance binnen datums van event valt
   srv.before(["CREATE", "UPDATE"], "Performances", async (req) => {
     const { startTime, event_ID } = req.data;
 
@@ -89,7 +80,7 @@ module.exports = async (srv) => {
     }
   });
 
-  // 4. Voorkom overlapping van performances op hetzelfde podium
+  // 3. Voorkom overlapping van performances op hetzelfde podium
   srv.before("CREATE", "Performances", async (req) => {
     const { startTime, endTime, stage_ID } = req.data;
     const overlapping = await SELECT.from("flexso.events.Performances")

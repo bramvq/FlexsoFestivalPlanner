@@ -1,0 +1,168 @@
+{
+  "_version": "1.65.0",
+  "sap.app": {
+    "id": "adminevents.adminevents",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:lrop",
+      "version": "1.15.0",
+      "toolsId": "a87f7e44-1945-435c-a0ea-836553112287"
+    },
+    "dataSources": {
+      "mainService": {
+        "uri": "/odata/v4/event/",
+        "type": "OData",
+        "settings": {
+          "annotations": [],
+          "odataVersion": "4.0"
+        }
+      }
+    },
+    "crossNavigation": {
+      "inbounds": {
+        "admin-events-manage": {
+          "semanticObject": "admin-events",
+          "action": "manage",
+          "title": "{{flpTitle}}",
+          "signature": {
+            "parameters": {},
+            "additionalParameters": "allowed"
+          }
+        }
+      }
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": true,
+    "dependencies": {
+      "minUI5Version": "1.128.1",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {},
+        "sap.fe.templates": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "adminevents.adminevents.i18n.i18n"
+        }
+      },
+      "": {
+        "dataSource": "mainService",
+        "preload": true,
+        "settings": {
+          "operationMode": "Server",
+          "autoExpandSelect": true,
+          "earlyRequests": true
+        }
+      },
+      "@i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "uri": "i18n/i18n.properties"
+      }
+    },
+    "resources": {
+      "css": []
+    },
+    "routing": {
+      "config": {},
+      "routes": [
+        {
+          "pattern": ":?query:",
+          "name": "EventsList",
+          "target": "EventsList"
+        },
+        {
+          "pattern": "Events({key}):?query:",
+          "name": "EventsObjectPage",
+          "target": "EventsObjectPage"
+        }
+      ],
+      "targets": {
+        "EventsList": {
+          "type": "Component",
+          "id": "EventsList",
+          "name": "sap.fe.templates.ListReport",
+          "options": {
+            "settings": {
+              "contextPath": "/Events",
+              "variantManagement": "Page",
+              "navigation": {
+                "Events": {
+                  "detail": {
+                    "route": "EventsObjectPage"
+                  }
+                }
+              },
+              "controlConfiguration": {
+                "@com.sap.vocabularies.UI.v1.LineItem": {
+                  "tableSettings": {
+                    "type": "ResponsiveTable"
+                  }
+                }
+              },
+              "initialLoad": "Enabled",
+              "content": {
+                "header": {
+                  "actions": {
+                    "AddEvent": {
+                      "press": "adminevents.adminevents.ext.controller.AddEvent.AddEvent",
+                      "visible": true,
+                      "enabled": true,
+                      "text": "Add Event"
+                    }
+                  }
+                }
+              },
+              "defaultTemplateAnnotationPath": "com.sap.vocabularies.UI.v1.SelectionPresentationVariant#table"
+            }
+          }
+        },
+        "EventsObjectPage": {
+          "type": "Component",
+          "id": "EventsObjectPage",
+          "name": "sap.fe.templates.ObjectPage",
+          "options": {
+            "settings": {
+              "editableHeaderContent": false,
+              "contextPath": "/Events"
+            }
+          }
+        }
+      }
+    }
+  },
+  "sap.fiori": {
+    "registrationIds": [],
+    "archeType": "transactional"
+  }
+}

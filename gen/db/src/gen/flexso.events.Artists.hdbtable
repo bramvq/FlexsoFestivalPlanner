@@ -1,5 +1,0 @@
-COLUMN TABLE flexso_events_Artists (
-  ID NVARCHAR(36) NOT NULL,
-  name NVARCHAR(100),
-  PRIMARY KEY(ID)
-)

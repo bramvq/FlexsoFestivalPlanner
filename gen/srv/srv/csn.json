@@ -199,6 +199,33 @@
     },
     "EventService.Artists": {
       "kind": "entity",
+      "@UI.FieldGroup#GeneratedGroup.$Type": "UI.FieldGroupType",
+      "@UI.FieldGroup#GeneratedGroup.Data": [
+        {
+          "$Type": "UI.DataField",
+          "Label": "name",
+          "Value": {
+            "=": "name"
+          }
+        }
+      ],
+      "@UI.Facets": [
+        {
+          "$Type": "UI.ReferenceFacet",
+          "ID": "GeneratedFacet1",
+          "Label": "General Information",
+          "Target": "@UI.FieldGroup#GeneratedGroup"
+        }
+      ],
+      "@UI.LineItem": [
+        {
+          "$Type": "UI.DataField",
+          "Label": "name",
+          "Value": {
+            "=": "name"
+          }
+        }
+      ],
       "projection": {
         "from": {
           "ref": [
@@ -240,6 +267,82 @@
     },
     "EventService.Events": {
       "kind": "entity",
+      "@UI.FieldGroup#GeneratedGroup.$Type": "UI.FieldGroupType",
+      "@UI.FieldGroup#GeneratedGroup.Data": [
+        {
+          "$Type": "UI.DataField",
+          "Label": "name",
+          "Value": {
+            "=": "name"
+          }
+        },
+        {
+          "$Type": "UI.DataField",
+          "Label": "startDate",
+          "Value": {
+            "=": "startDate"
+          }
+        },
+        {
+          "$Type": "UI.DataField",
+          "Label": "endDate",
+          "Value": {
+            "=": "endDate"
+          }
+        },
+        {
+          "$Type": "UI.DataField",
+          "Label": "location",
+          "Value": {
+            "=": "location"
+          }
+        }
+      ],
+      "@UI.Facets": [
+        {
+          "$Type": "UI.ReferenceFacet",
+          "ID": "GeneratedFacet1",
+          "Label": "General Information",
+          "Target": "@UI.FieldGroup#GeneratedGroup"
+        }
+      ],
+      "@UI.LineItem": [
+        {
+          "$Type": "UI.DataField",
+          "Label": "name",
+          "Value": {
+            "=": "name"
+          }
+        },
+        {
+          "$Type": "UI.DataField",
+          "Label": "startDate",
+          "Value": {
+            "=": "startDate"
+          }
+        },
+        {
+          "$Type": "UI.DataField",
+          "Label": "endDate",
+          "Value": {
+            "=": "endDate"
+          }
+        },
+        {
+          "$Type": "UI.DataField",
+          "Label": "location",
+          "Value": {
+            "=": "location"
+          }
+        }
+      ],
+      "@UI.SelectionPresentationVariant#table.$Type": "UI.SelectionPresentationVariantType",
+      "@UI.SelectionPresentationVariant#table.PresentationVariant.$Type": "UI.PresentationVariantType",
+      "@UI.SelectionPresentationVariant#table.PresentationVariant.Visualizations": [
+        "@UI.LineItem"
+      ],
+      "@UI.SelectionPresentationVariant#table.SelectionVariant.$Type": "UI.SelectionVariantType",
+      "@UI.SelectionPresentationVariant#table.SelectionVariant.SelectOptions": [],
       "projection": {
         "from": {
           "ref": [
@@ -432,6 +535,62 @@
       },
       "returns": {
         "type": "EventService.Performances"
+      }
+    },
+    "SetlistService": {
+      "@source": "srv/setlist-service.cds",
+      "kind": "service"
+    },
+    "SetlistService.Artists": {
+      "kind": "entity",
+      "projection": {
+        "from": {
+          "ref": [
+            "flexso.events.Artists"
+          ]
+        }
+      },
+      "elements": {
+        "ID": {
+          "key": true,
+          "type": "cds.UUID"
+        },
+        "name": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "performances": {
+          "type": "cds.Association",
+          "cardinality": {
+            "max": "*"
+          },
+          "target": "flexso.events.Performances",
+          "on": [
+            {
+              "ref": [
+                "performances",
+                "artist"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "$self"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "SetlistService.searchArtists": {
+      "kind": "action",
+      "params": {
+        "searchTerm": {
+          "type": "cds.String"
+        }
+      },
+      "returns": {
+        "type": "cds.String"
       }
     }
   },

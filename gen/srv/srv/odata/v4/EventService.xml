@@ -6,6 +6,9 @@
   <edmx:Reference Uri="https://oasis-tcs.github.io/odata-vocabularies/vocabularies/Org.OData.Core.V1.xml">
     <edmx:Include Alias="Core" Namespace="Org.OData.Core.V1"/>
   </edmx:Reference>
+  <edmx:Reference Uri="https://sap.github.io/odata-vocabularies/vocabularies/UI.xml">
+    <edmx:Include Alias="UI" Namespace="com.sap.vocabularies.UI.v1"/>
+  </edmx:Reference>
   <edmx:DataServices>
     <Schema Namespace="EventService" xmlns="http://docs.oasis-open.org/odata/ns/edm">
       <Annotation Term="Core.Links">
@@ -93,8 +96,136 @@
         <Parameter Name="newEndTime" Type="Edm.DateTimeOffset" Precision="7"/>
         <ReturnType Type="EventService.Performances"/>
       </Action>
+      <Annotations Target="EventService.Artists">
+        <Annotation Term="UI.FieldGroup" Qualifier="GeneratedGroup">
+          <Record Type="UI.FieldGroupType">
+            <PropertyValue Property="Data">
+              <Collection>
+                <Record Type="UI.DataField">
+                  <PropertyValue Property="Label" String="name"/>
+                  <PropertyValue Property="Value" Path="name"/>
+                </Record>
+              </Collection>
+            </PropertyValue>
+          </Record>
+        </Annotation>
+        <Annotation Term="UI.Facets">
+          <Collection>
+            <Record Type="UI.ReferenceFacet">
+              <PropertyValue Property="ID" String="GeneratedFacet1"/>
+              <PropertyValue Property="Label" String="General Information"/>
+              <PropertyValue Property="Target" AnnotationPath="@UI.FieldGroup#GeneratedGroup"/>
+            </Record>
+          </Collection>
+        </Annotation>
+        <Annotation Term="UI.LineItem">
+          <Collection>
+            <Record Type="UI.DataField">
+              <PropertyValue Property="Label" String="name"/>
+              <PropertyValue Property="Value" Path="name"/>
+            </Record>
+          </Collection>
+        </Annotation>
+      </Annotations>
       <Annotations Target="EventService.Artists/ID">
         <Annotation Term="Core.ComputedDefaultValue" Bool="true"/>
+      </Annotations>
+      <Annotations Target="EventService.Events">
+        <Annotation Term="UI.FieldGroup" Qualifier="GeneratedGroup">
+          <Record Type="UI.FieldGroupType">
+            <PropertyValue Property="Data">
+              <Collection>
+                <Record Type="UI.DataField">
+                  <PropertyValue Property="Label" String="name"/>
+                  <PropertyValue Property="Value" Path="name"/>
+                </Record>
+                <Record Type="UI.DataField">
+                  <PropertyValue Property="Label" String="startDate"/>
+                  <PropertyValue Property="Value" Path="startDate"/>
+                </Record>
+                <Record Type="UI.DataField">
+                  <PropertyValue Property="Label" String="endDate"/>
+                  <PropertyValue Property="Value" Path="endDate"/>
+                </Record>
+                <Record Type="UI.DataField">
+                  <PropertyValue Property="Label" String="location"/>
+                  <PropertyValue Property="Value" Path="location"/>
+                </Record>
+              </Collection>
+            </PropertyValue>
+          </Record>
+        </Annotation>
+        <Annotation Term="UI.Facets">
+          <Collection>
+            <Record Type="UI.ReferenceFacet">
+              <PropertyValue Property="ID" String="GeneratedFacet1"/>
+              <PropertyValue Property="Label" String="General Information"/>
+              <PropertyValue Property="Target" AnnotationPath="@UI.FieldGroup#GeneratedGroup"/>
+            </Record>
+          </Collection>
+        </Annotation>
+        <Annotation Term="UI.LineItem">
+          <Collection>
+            <Record Type="UI.DataField">
+              <PropertyValue Property="Label" String="name"/>
+              <PropertyValue Property="Value" Path="name"/>
+            </Record>
+            <Record Type="UI.DataField">
+              <PropertyValue Property="Label" String="startDate"/>
+              <PropertyValue Property="Value" Path="startDate"/>
+            </Record>
+            <Record Type="UI.DataField">
+              <PropertyValue Property="Label" String="endDate"/>
+              <PropertyValue Property="Value" Path="endDate"/>
+            </Record>
+            <Record Type="UI.DataField">
+              <PropertyValue Property="Label" String="location"/>
+              <PropertyValue Property="Value" Path="location"/>
+            </Record>
+          </Collection>
+        </Annotation>
+        <Annotation Term="UI.SelectionPresentationVariant" Qualifier="table">
+          <Record Type="UI.SelectionPresentationVariantType">
+            <PropertyValue Property="PresentationVariant">
+              <Record Type="UI.PresentationVariantType">
+                <PropertyValue Property="Visualizations">
+                  <Collection>
+                    <AnnotationPath>@UI.LineItem</AnnotationPath>
+                  </Collection>
+                </PropertyValue>
+              </Record>
+            </PropertyValue>
+            <PropertyValue Property="SelectionVariant">
+              <Record Type="UI.SelectionVariantType">
+                <PropertyValue Property="SelectOptions">
+                  <Collection/>
+                </PropertyValue>
+              </Record>
+            </PropertyValue>
+          </Record>
+        </Annotation>
+      </Annotations>
+      <Annotations Target="EventService.EntityContainer/Events">
+        <Annotation Term="UI.SelectionPresentationVariant" Qualifier="table">
+          <Record Type="UI.SelectionPresentationVariantType">
+            <PropertyValue Property="PresentationVariant">
+              <Record Type="UI.PresentationVariantType">
+                <PropertyValue Property="Visualizations">
+                  <Collection>
+                    <AnnotationPath>@UI.LineItem</AnnotationPath>
+                  </Collection>
+                </PropertyValue>
+              </Record>
+            </PropertyValue>
+            <PropertyValue Property="SelectionVariant">
+              <Record Type="UI.SelectionVariantType">
+                <PropertyValue Property="SelectOptions">
+                  <Collection/>
+                </PropertyValue>
+              </Record>
+            </PropertyValue>
+          </Record>
+        </Annotation>
       </Annotations>
       <Annotations Target="EventService.Events/ID">
         <Annotation Term="Core.ComputedDefaultValue" Bool="true"/>
