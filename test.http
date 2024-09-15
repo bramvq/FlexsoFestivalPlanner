@@ -180,3 +180,24 @@ Content-Type: application/json
   "event_ID": "101",  
   "stage_ID": "102"
 }
+
+
+
+### ----------------- Acties ----------------
+
+### SETLIST.fm searchArtists
+POST http://localhost:4004/odata/v4/setlist/searchArtists
+Content-Type: application/json
+
+{
+  "searchTerm": "Radiohead"
+}
+
+### SETLIST.fm searchArtists
+POST http://localhost:4004/odata/v4/setlist/searchArtists
+Content-Type: application/json
+
+{
+  "searchTerm": "Queens of the Stone Age"
+}
+
