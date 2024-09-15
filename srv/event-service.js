@@ -24,9 +24,9 @@ module.exports = async (srv) => {
   // 3. Voorkom verwijderen van events met performances
   srv.before("DELETE", "Events", async (req) => {
     const eventID = req.data.ID;
-    const associatedPerformances = await SELECT.from("Performances").where({
-      event_ID: eventID,
-    });
+    const associatedPerformances = await SELECT.from(
+      "flexso.events.Performances"
+    ).where({ event_ID: eventID });
     if (associatedPerformances.length > 0) {
       req.error(
         400,
@@ -43,7 +43,7 @@ module.exports = async (srv) => {
   // C. PERFORMANCES
   //
 
-  // 1. Automatisch eindtijd invullen voor performances
+  // 1. Automatisch eindtijd invullen voor performances (anderhalf uur)
   srv.before("CREATE", "Performances", (req) => {
     if (req.data.startTime && !req.data.endTime) {
       const startTime = new Date(req.data.startTime);

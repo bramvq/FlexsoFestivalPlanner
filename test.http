@@ -2,9 +2,9 @@
 @host = http://localhost:4004/odata/v4/event
 @contentType = application/json
 
-### Artists
+### --------------- Artists --------------
 # 
-# Alle Artists
+### Alle Artists
 GET {{host}}/Artists
 Accept: {{contentType}}
 
@@ -32,14 +32,14 @@ Content-Type: {{contentType}}
 ### Delete een Artist
 DELETE {{host}}/Artists(ID='108')
 
-### Events
+### ---------------- Events ----------------
 
 ### Alle Events
 GET {{host}}/Events
 Accept: {{contentType}}
 
 ### Specifieke Event
-GET {{host}}/Events(ID='102')
+GET {{host}}/Events(ID='101')
 Accept: {{contentType}}
 
 ### Nieuw Event
@@ -54,10 +54,26 @@ Content-Type: {{contentType}}
   "location": "Woodstock"
 }
 
+### Event met ongeldige datums (startDate > endDate)
+POST {{host}}/Events
+Content-Type: {{contentType}}
 
-### Stages
+{
+  "ID": "105",
+  "name": "Invalid Event",
+  "startDate": "2024-01-05",
+  "endDate": "2024-01-01",
+  "location": "Some Location"
+}
 
-# Alle Stages
+
+### Probeer event te verwijderen met gekoppelde performances
+DELETE {{host}}/Events(ID='101')
+
+
+### ----------------- Stages ----------------
+
+### Alle Stages
 GET {{host}}/Stages
 Accept: {{contentType}}
 
@@ -65,6 +81,19 @@ Accept: {{contentType}}
 GET {{host}}/Stages(ID='103')
 Accept: {{contentType}}
 
+### Maak nieuw stage
+POST {{host}}/Stages
+Content-Type: {{contentType}}
+
+{
+    "ID": "107",
+    "name": "Alternative Stage",
+    "event_ID": "103"
+}
+
+
+
+### ----------------- Performances ----------------
 
 ### Nieuwe performance
 POST {{host}}/Performances
@@ -77,19 +106,6 @@ Content-Type: {{contentType}}
     "artist_ID": "550e8400-e29b-41d4-a716-446655440001",
     "event_ID": "101",
     "stage_ID": "102"
-}
-
-
-### Event met ongeldige datums (startDate > endDate)
-POST {{host}}/Events
-Content-Type: {{contentType}}
-
-{
-  "ID": "105",
-  "name": "Invalid Event",
-  "startDate": "2024-01-05",
-  "endDate": "2024-01-01",
-  "location": "Some Location"
 }
 
 ### Voeg een performance toe op een bezet podium
@@ -106,11 +122,6 @@ Content-Type: {{contentType}}
 }
 
 
-### Haal event op met berekende duur
-GET {{host}}/Events(ID='101')
-Accept: {{contentType}}
-
-
 ### Voeg performance toe zonder eindtijd
 POST {{host}}/Performances
 Content-Type: {{contentType}}
@@ -124,21 +135,6 @@ Content-Type: {{contentType}}
 }
 ### Verwijder performance 106
 DELETE {{host}}/Performances(ID='106')
-
-
-### Probeer event te verwijderen met gekoppelde performances
-DELETE {{host}}/Events(ID='101')
-
-
-### Maak nieuw podium
-POST {{host}}/Stages
-Content-Type: {{contentType}}
-
-{
-    "ID": "107",
-    "name": "Alternative Stage",
-    "event_ID": "103"
-}
 
 ### Maak nieuwe performance
 POST {{host}}/Performances
